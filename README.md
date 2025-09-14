@@ -1,6 +1,72 @@
 # \#tokyo🗼
 
-# 
+
+
+# \#20250912
+
+#### **배열(Array) 타입**
+
+<배열>
+
+1. 정의 :  많은 양의 값을 다루는 좀 더 효율적인 방법
+
+&nbsp;	       즉, 연속된 공간에 값을 나열시키고, 각 값에 인덱스를 부여해 놓은 자료 구조.
+
+2\. 	특징 - 같은 타입의 값만 관리
+
+&nbsp;	   - 배열의 길이는 늘리거나 줄일 수 없음
+
+3\. 	변수 선언 : 
+
+&nbsp;			***타입\[] 변수;***
+
+			***타입 변수 \[];***
+
+4\. 값 목록으로 배열 생성 : 
+
+&nbsp;			***타입\[] 변수 = { 값0, 값1, 값2, ...};***
+
+&nbsp;			String\[] season = { "Spring", "Summer", "Fall", "Winter"};
+
+&nbsp;			season\[1] = "여름"; //"Summer"를 "여름"으로 항목의 값 변경!
+
+&nbsp;								     이렇게 선언하고 나면, 앞으로 seaon\[1]은 Summer가 아니라 여름으로 나옴
+
+&nbsp;	      \*\*배열 변수를 미리 선언한 후에는 값 목록을 변수에 대입할 수 없다\*\*
+
+5\. new 연산자로 배열 생성 :
+
+&nbsp;	      값의 목록은 없지만 향후 값들을 저장할 목적으로 배열 미리 생성 가능
+
+&nbsp;	      ***타입\[] 변수 = new 타입\[길이];***
+
+&nbsp;	      new 연산자로 배열을 처음 생성하면 배열 항목은 기본값으로 초기화 (초기값 거의 0)
+
+6\. 배열 길이 : 배열에 저장할 수 있는 항몫.
+
+&nbsp;			      ***배열변수.length;***
+
+&nbsp;			      이때, for 문 조건식에서 < 연산자를 사용한 이유는 배열 시작이 0이기 때문
+
+
+
+
+
+
+
+<인덱스>
+
+1. 정의 : \[] 대괄호와 함께 사용
+
+
+
+
+
+
+
+
+
+
 
 # \#20250911
 
@@ -18,39 +84,39 @@ public class Number2 {
 
 
 
-&nbsp;	public static void main(String\[] args) {
+ 	public static void main(String\[] args) {
 
-&nbsp;		
+ 
 
 
 
-&nbsp;		System.out.println("비밀번호를 입력하세요.");
+ 		System.out.println("비밀번호를 입력하세요.");
 
-&nbsp;		String password = "qwer1234";
+ 		String password = "qwer1234";
 
-&nbsp;		String result;
+ 		String result;
 
-&nbsp;		
+ 
 
-&nbsp;		if(password.equals("qwer1234")) {
+ 		if(password.equals("qwer1234")) {
 
-&nbsp;			result = "비밀번호가 맞아요!";
+ 			result = "비밀번호가 맞아요!";
 
-&nbsp;		}else {
+ 		}else {
 
-&nbsp;			result = "비밀번호가 틀렸어요!";
+ 			result = "비밀번호가 틀렸어요!";
 
-&nbsp;		}
+ 		}
 
-&nbsp;		
+ 
 
-&nbsp;		System.out.println(result);
+ 		System.out.println(result);
 
-&nbsp;		
+ 
 
-&nbsp;		
+ 
 
-&nbsp;	}
+ 	}
 
 
 
@@ -58,7 +124,7 @@ public class Number2 {
 
 #### 2번
 
-&nbsp;package day1;
+ package day1;
 
 
 
@@ -70,43 +136,43 @@ public class Number1 {
 
 
 
-&nbsp;	public static void main(String\[] args) {
+ 	public static void main(String\[] args) {
 
-&nbsp;	
+ 
 
-&nbsp;		Scanner sc = new Scanner(System.in);
+ 		Scanner sc = new Scanner(System.in);
 
-&nbsp;		
+ 
 
-&nbsp;		System.out.println("비밀번호를 입력하세요.");
+ 		System.out.println("비밀번호를 입력하세요.");
 
-&nbsp;		String password = sc.nextLine();
+ 		String password = sc.nextLine();
 
-&nbsp;		String result;
+ 		String result;
 
-&nbsp;		
+ 
 
-&nbsp;		if(password.equals("qwer1234")) {
+ 		if(password.equals("qwer1234")) {
 
-&nbsp;			result = "비밀번호가 맞아요!";
+ 			result = "비밀번호가 맞아요!";
 
-&nbsp;		}else {
+ 		}else {
 
-&nbsp;			result = "비밀번호가 틀렸어요!";
+ 			result = "비밀번호가 틀렸어요!";
 
-&nbsp;		}
+ 		}
 
-&nbsp;		
+ 
 
-&nbsp;		System.out.println(result);
+ 		System.out.println(result);
 
-&nbsp;		
+ 
 
-&nbsp;		sc.close();
+ 		sc.close();
 
 
 
-&nbsp;	}
+ 	}
 
 
 
@@ -124,39 +190,39 @@ public class Number3 {
 
 
 
-&nbsp;	public static void main(String\[] args) {
+ 	public static void main(String\[] args) {
 
-&nbsp;		
+ 
 
-&nbsp;		System.out.println("좋아하는 동물을 입력해주세요.");
+ 		System.out.println("좋아하는 동물을 입력해주세요.");
 
-&nbsp;		String animal = "강아지";
+ 		String animal = "강아지";
 
-&nbsp;		String result;
+ 		String result;
 
-&nbsp;		
+ 
 
-&nbsp;		if(animal.equals("강아지")) {
+ 		if(animal.equals("강아지")) {
 
-&nbsp;			result = "멍멍!";
+ 			result = "멍멍!";
 
-&nbsp;		}else if(animal.equals("고양이")){
+ 		}else if(animal.equals("고양이")){
 
-&nbsp;			result = "야옹!";
+ 			result = "야옹!";
 
-&nbsp;		}else {
+ 		}else {
 
-&nbsp;			result = "무슨 동물이야?";
+ 			result = "무슨 동물이야?";
 
-&nbsp;		}
+ 		}
 
-&nbsp;		
+ 
 
-&nbsp;		System.out.println(result);
+ 		System.out.println(result);
 
 
 
-&nbsp;	}
+ 	}
 
 
 
@@ -180,45 +246,45 @@ public class Number4 {
 
 
 
-&nbsp;	public static void main(String\[] args) {
+ 	public static void main(String\[] args) {
 
 
 
-&nbsp;		Scanner sc = new Scanner(System.in);
+ 		Scanner sc = new Scanner(System.in);
 
-&nbsp;		
+ 
 
-&nbsp;		System.out.println("좋아하는 동물을 입력해주세요.");
+ 		System.out.println("좋아하는 동물을 입력해주세요.");
 
-&nbsp;		String animal = sc.nextLine();
+ 		String animal = sc.nextLine();
 
-&nbsp;		String result;
+ 		String result;
 
-&nbsp;		
+ 
 
-&nbsp;		if(animal.equals("강아지")) {
+ 		if(animal.equals("강아지")) {
 
-&nbsp;			result = "멍멍!";
+ 			result = "멍멍!";
 
-&nbsp;		}else if(animal.equals("고양이")){
+ 		}else if(animal.equals("고양이")){
 
-&nbsp;			result = "야옹!";
+ 			result = "야옹!";
 
-&nbsp;		}else {
+ 		}else {
 
-&nbsp;			result = "무슨 동물이야?";
+ 			result = "무슨 동물이야?";
 
-&nbsp;		}
+ 		}
 
-&nbsp;		
+ 
 
-&nbsp;		System.out.println(result);
-
-
+ 		System.out.println(result);
 
 
 
-&nbsp;	}
+
+
+ 	}
 
 
 
@@ -242,41 +308,41 @@ public class Number5 {
 
 
 
-&nbsp;	public static void main(String\[] args) {
+ 	public static void main(String\[] args) {
 
 
 
-&nbsp;		Scanner sc = new Scanner(System.in);
+ 		Scanner sc = new Scanner(System.in);
 
 
 
-&nbsp;		System.out.println("주말일까 평일일까 아무숫자나 넣어보세요");
+ 		System.out.println("주말일까 평일일까 아무숫자나 넣어보세요");
 
-&nbsp;		int day = sc.nextInt();
+ 		int day = sc.nextInt();
 
-&nbsp;		String result = sc.nextLine();
+ 		String result = sc.nextLine();
 
-&nbsp;		
+ 
 
-&nbsp;		if(day == 0 || day == 6) {
+ 		if(day == 0 || day == 6) {
 
-&nbsp;			result = "주말이야!";
+ 			result = "주말이야!";
 
-&nbsp;		}else {
+ 		}else {
 
-&nbsp;			result = "평일이야!";
+ 			result = "평일이야!";
 
-&nbsp;		}
+ 		}
 
-&nbsp;		
+ 
 
-&nbsp;		System.out.println(result);
+ 		System.out.println(result);
 
-&nbsp;	
+ 
 
-&nbsp;		
+ 
 
-&nbsp;	}
+ 	}
 
 
 
@@ -300,69 +366,69 @@ public class Number5 {
 
 
 
-&nbsp;	public static void main(String\[] args) {
+ 	public static void main(String\[] args) {
 
-&nbsp;		
+ 
 
-&nbsp;		Scanner sc = new Scanner(System.in);
+ 		Scanner sc = new Scanner(System.in);
 
-&nbsp;		
+ 
 
-&nbsp;		System.out.println("주말 맞추기! 아무숫자나 입력해보세요.");
+ 		System.out.println("주말 맞추기! 아무숫자나 입력해보세요.");
 
-&nbsp;		int number = sc.nextInt();
+ 		int number = sc.nextInt();
 
-&nbsp;		String results = sc.nextLine();
+ 		String results = sc.nextLine();
 
-&nbsp;		
+ 
 
-&nbsp;		switch (number) {
+ 		switch (number) {
 
-&nbsp;			case 0:
+ 			case 0:
 
-&nbsp;				results = "일요일";
+ 				results = "일요일";
 
-&nbsp;				break;
+ 				break;
 
-&nbsp;			case 6:
+ 			case 6:
 
-&nbsp;				results = "토요일";
+ 				results = "토요일";
 
-&nbsp;				break;
+ 				break;
 
-&nbsp;			default:
+ 			default:
 
-&nbsp;				results = "기타";
+ 				results = "기타";
 
-&nbsp;				break;
+ 				break;
 
-&nbsp;			}
+ 			}
 
-&nbsp;		
-
-
-
-&nbsp;		String reresults = results;
-
-&nbsp;		if (results == "일요일" || results == "토요일") {
-
-&nbsp;			reresults = "주말이야!";
-
-&nbsp;		}else if(results == "기타"){
-
-&nbsp;			reresults = "평일이야!";
-
-&nbsp;		}else {
-
-&nbsp;			return;
-
-&nbsp;		}
+ 
 
 
 
-&nbsp;		System.out.println(number + "는 " + results + "이고, " + reresults);	
+ 		String reresults = results;
 
-&nbsp;	}
+ 		if (results == "일요일" || results == "토요일") {
+
+ 			reresults = "주말이야!";
+
+ 		}else if(results == "기타"){
+
+ 			reresults = "평일이야!";
+
+ 		}else {
+
+ 			return;
+
+ 		}
+
+
+
+ 		System.out.println(number + "는 " + results + "이고, " + reresults);
+
+ 	}
 
 
 
@@ -384,41 +450,41 @@ public class Number7 {
 
 
 
-&nbsp;	public static void main(String\[] args) {
+ 	public static void main(String\[] args) {
 
 
 
-&nbsp;		Scanner sc =  new Scanner(System.in);
+ 		Scanner sc =  new Scanner(System.in);
 
-&nbsp;		System.out.println("나이를 입력해주세요.");
+ 		System.out.println("나이를 입력해주세요.");
 
-&nbsp;		int age = sc.nextInt();
+ 		int age = sc.nextInt();
 
-&nbsp;		String result;
+ 		String result;
 
-&nbsp;		// 근데 이건 왜 해야하지?
+ 		// 근데 이건 왜 해야하지?
 
-&nbsp;		
+ 
 
-&nbsp;		if (age >= 19) {
+ 		if (age >= 19) {
 
-&nbsp;			result = "성인입니다.";
+ 			result = "성인입니다.";
 
-&nbsp;		}else {
+ 		}else {
 
-&nbsp;			result = "미성년입니다.";
+ 			result = "미성년입니다.";
 
-&nbsp;		}
+ 		}
 
-&nbsp;				
+ 
 
-&nbsp;		System.out.println(result);
+ 		System.out.println(result);
 
-&nbsp;		
+ 
 
-&nbsp;		sc.close();
+ 		sc.close();
 
-&nbsp;	}
+ 	}
 
 
 
@@ -440,51 +506,51 @@ public class Number8 {
 
 
 
-&nbsp;	public static void main(String\[] args) {
+ 	public static void main(String\[] args) {
 
 
 
-&nbsp;		Scanner sc = new Scanner(System.in);
+ 		Scanner sc = new Scanner(System.in);
 
-&nbsp;		
+ 
 
-&nbsp;		
+ 
 
-&nbsp;		System.out.println("오늘 마신 커피 수를 입력하세요: ");
+ 		System.out.println("오늘 마신 커피 수를 입력하세요: ");
 
-&nbsp;		int cups = sc.nextInt();
+ 		int cups = sc.nextInt();
 
-&nbsp;		String result;
+ 		String result;
 
-&nbsp;		
+ 
 
-&nbsp;		
+ 
 
-&nbsp;		if(cups == 0) {
+ 		if(cups == 0) {
 
-&nbsp;			result = "여긴 어디? 😵";
+ 			result = "여긴 어디? 😵";
 
-&nbsp;		}else if(cups >= 1 \&\& cups <3) {
+ 		}else if(cups >= 1 \&\& cups <3) {
 
-&nbsp;			result = "완전 맑은 정신~ 🍀";
+ 			result = "완전 맑은 정신~ 🍀";
 
-&nbsp;		}else {
+ 		}else {
 
-&nbsp;			result = "기분 좋은 상태! 😄";
+ 			result = "기분 좋은 상태! 😄";
 
-&nbsp;		}
+ 		}
 
-&nbsp;		
+ 
 
-&nbsp;		System.out.println("당신의 상태는~ " + result);
+ 		System.out.println("당신의 상태는~ " + result);
 
-&nbsp;		
+ 
 
-&nbsp;		sc.close();
+ 		sc.close();
 
-&nbsp;		
+ 
 
-&nbsp;	}
+ 	}
 
 
 
@@ -506,43 +572,43 @@ public class Number9 {
 
 
 
-&nbsp;	public static void main(String\[] args) {
+ 	public static void main(String\[] args) {
 
-&nbsp;		
+ 
 
-&nbsp;		Scanner sc = new Scanner(System.in);
+ 		Scanner sc = new Scanner(System.in);
 
-&nbsp;		
+ 
 
-&nbsp;		System.out.println("짝수인지 홀수인지 궁금한 숫자를 넣어보세용");
+ 		System.out.println("짝수인지 홀수인지 궁금한 숫자를 넣어보세용");
 
-&nbsp;		int number = sc.nextInt();
+ 		int number = sc.nextInt();
 
-&nbsp;		String result = "";
+ 		String result = "";
 
-&nbsp;		
+ 
 
-&nbsp;		if(number % 2 == 0) {
+ 		if(number % 2 == 0) {
 
-&nbsp;			result = "짝수";
+ 			result = "짝수";
 
-&nbsp;		}else {
+ 		}else {
 
-&nbsp;			result = "홀수";
+ 			result = "홀수";
 
-&nbsp;		}
+ 		}
 
-&nbsp;				
+ 
 
-&nbsp;		System.out.println("물어보신 숫자인 " + number + "는 " + result + " 입니다.");
+ 		System.out.println("물어보신 숫자인 " + number + "는 " + result + " 입니다.");
 
-&nbsp;		
+ 
 
-&nbsp;		sc.close();
+ 		sc.close();
 
-&nbsp;		
+ 
 
-&nbsp;	}
+ 	}
 
 
 
