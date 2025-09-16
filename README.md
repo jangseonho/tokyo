@@ -2,7 +2,10 @@
 
 
 #20250916
-***package day4;
+
+***
+
+package day4;
 
 public class Idol {
 
@@ -60,6 +63,7 @@ public class Idol {
 	}
 	
 }
+
 ***
 
 
