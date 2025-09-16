@@ -1,6 +1,67 @@
 # \#tokyo🗼
 
 
+#20250916
+***package day4;
+
+public class Idol {
+
+	private String name;
+	private String position;
+	private String groupName;
+	private int age;
+	
+	
+	public Idol(String name, String position, String groupName, int age) {
+		this.name = name;
+		this.position = position;
+		this.groupName = groupName;
+		this.age = age;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public String getPosition() {
+		return position;
+	}
+
+
+	public void setPosition(String position) {
+		this.position = position;
+	}
+
+
+	public String getGroupName() {
+		return groupName;
+	}
+
+
+	public void setGroupName(String groupName) {
+		this.groupName = groupName;
+	}
+
+
+	public int getAge() {
+		return age;
+	}
+
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+}
+***
+
 
 # \#20250912
 
