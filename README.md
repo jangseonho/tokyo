@@ -5,7 +5,6 @@
 클래스 수업 숙제
 
 ## 1번: Idol
-
 ```
 package day4;
 
@@ -65,7 +64,225 @@ public class Idol {
 	}
 	
 }
+```
 
+## 2번: Pizza
+```
+package day4;
+
+public class Pizza {
+
+	private String name;
+	private String size;
+	
+	
+	public Pizza(String name, String size) {
+		this.name = name;
+		this.size = size;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public String getSize() {
+		return size;
+	}
+
+
+	public void setSize(String size) {
+		this.size = size;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Pizza [제품명: " + name + ", 사이즈: " + size + "]";
+	}
+	
+	
+	
+}
+```
+
+```
+package day4;
+
+public class PizzaMain {
+
+	public static void main(String[] args) {
+		Pizza pizza = new Pizza("페페로니", "L");
+		System.out.println(pizza);
+	
+	}
+
+}
+```
+
+## 3번: Song
+```
+package day4;
+
+public class Song {
+
+	private String title;
+	private String artist;
+	
+	
+	//
+	public Song(String title, String artist) {
+		this.title = title;
+		this.artist = artist;
+	}
+
+	
+	//
+	public String getTitle() {
+		return title;
+	}
+
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+
+	public String getArtist() {
+		return artist;
+	}
+
+
+	public void setArtist(String artist) {
+		this.artist = artist;
+	}
+	
+	
+	
+	//
+	void play() {
+		System.out.println("노래를 재생합니다!");
+	}
+
+	
+	
+}
+```
+
+```
+package day4;
+
+public class SongMain {
+
+	public static void main(String[] args) {
+		Song song1 = new Song("your Idol", "Saja Boys");
+		
+		song1.play();
+		
+	}
+
+}
+```
+
+## 4번: InstagramPost
+```
+package day4;
+
+public class InstagramPost {
+
+	
+	private String name;
+	private String detail;
+	
+	//
+	public InstagramPost(String name, String detail) {
+		this.name = name;
+		this.detail = detail;
+	}
+
+	//
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDetail() {
+		return detail;
+	}
+
+	public void setDetail(String detail) {
+		this.detail = detail;
+	}
+
+	@Override
+	public String toString() {
+		return "InstagramPost [작성자: " + name + ", 내용: " + detail + "]";
+	}
+
+}
+```
+
+```
+package day4;
+
+public class InstagramPostMain {
+
+	public static void main(String[] args) {
+		InstagramPost insta = new InstagramPost("민지", "오늘 날씨 짱");
+
+		System.out.println(insta);
+		
+		
+	}
+
+}
+```
+
+## 5번: DeliveryOrder
+```
+package day4;
+
+public class DeliveryOrder {
+
+	private String food;
+	private String address;
+	
+	//
+	public DeliveryOrder(String food, String address) {
+		this.food = food;
+		this.address = address;
+	}
+	
+	//
+	void deliver() {
+		System.out.println("음식: " + food + ", 장소: " + address);
+	}
+
+}
+```
+
+```
+package day4;
+
+public class DeliveryOrderMain {
+
+	public static void main(String[] args) {
+		DeliveryOrder delivery = new DeliveryOrder("떡볶이", "기숙사");
+		
+		delivery.deliver();
+
+	}
+
+}
 ```
 
 
